@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lua Obfuscator</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ui">
+
+    <h2>Lua Obfuscator Tool</h2>
+
+    <div class="content">
+
+        <textarea id="input" placeholder="Paste Lua script here"></textarea>
+
+        <div id="output" class="output"></div>
+
+    </div>
+
+    <div class="buttons">
+        <button onclick="obfuscate()">Obfuscate</button>
+        <button onclick="copyOut()">Copy</button>
+        <button onclick="clearAll()">Clear</button>
+    </div>
+
+    <div class="info">
+        Engine: XOR + Base64 + Chunk mapping<br>
+        Mode: Lua loader generator<br>
+        Status: active
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
